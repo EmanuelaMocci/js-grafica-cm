@@ -8,6 +8,8 @@
 #contenitore{
     max-width: 1000px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .quadrato{
     background-color: green;
