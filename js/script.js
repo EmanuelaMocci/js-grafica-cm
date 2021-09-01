@@ -14,7 +14,7 @@ document.getElementById("contenitore").addEventListener("click",
 
      function(evento) {
 
-        // alert("Il numero della casella selezionata è" + );
+        alert("Il numero della casella selezionata è " + (evento.target.innerHTML) );
 
         evento.target.classList.toggle('rosso');
 
