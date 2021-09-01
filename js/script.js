@@ -3,10 +3,21 @@ var celle = prompt("Inserisci il numero di celle desiderato");
 
 // Tramite una funzione javascript disegnare in pagina la griglia con massimo 10 celle per riga.
 // Crea un ciclo for per ripetere le celle
-for (var i = 1; i <= celle; i++) {
+for (var i = 2; i <= celle; i++) {
     document.getElementById("contenitore").innerHTML += `<div class="quadrato">${i}</div>`;
 }
 
-
 // Al click su una cella dovrà essere mostrato con un alert il numero della cella e il suo background diventerà rosso.
 // Crea il click con la funzione
+
+document.getElementById("contenitore").addEventListener("click", 
+
+     function(evento) {
+
+        // alert("Il numero della casella selezionata è" + );
+
+        evento.target.classList.toggle('rosso');
+
+        console.log(evento.target);
+}); 
+
